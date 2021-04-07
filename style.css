@@ -8,14 +8,25 @@ body{
 }
 header{
     background-color: #033347;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 6rem;
+    display: flex;
+    justify-content: center;
+}
+header h2{
+    color: white;
+    padding-top: 5px;
+    width: 45%;
+    cursor: pointer;
+}
+header form{
+    width: 45%;
     display: flex;
     justify-content: flex-end;
 }
 .search{
     background-color: transparent;
     border-radius: 50px;
-    padding: 0.5rem;
+    padding: 0.5rem 0.5rem;
     border: 2px solid #13688C;
     outline: none;
     color: #13688C;
@@ -27,6 +38,28 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+.popular-bar{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding-top: 1.5rem;
+}
+.popular-bar h3{
+    width: 50%;
+    color: #1a81ad;
+}
+.popular-bar a{
+    text-decoration: none;
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    color: #237699;
+    cursor: pointer;
+}
+.popular-bar a:hover{
+    color: #239ed3;
 }
 .movie{
     background-color: #13688C;
@@ -82,4 +115,36 @@ main{
 }
 .overview h4{
     padding-bottom: 10px;
+}
+
+.popular-title{
+    width: 100%;
+    padding-left: 2rem;
+}
+.popular-main{
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    color: #13688C;
+}
+.page-box{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.page-box button{
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    outline: none;
+    border: none;
+    background-color: #0b4761;
+    color: white;
+    margin: 0px 10px;
+    cursor: pointer;
+}
+#page1{
+    box-shadow: 1px 0px 16px 0px #033347;
 }
