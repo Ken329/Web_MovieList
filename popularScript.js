@@ -13,11 +13,10 @@ async function getPopularMovie(urlPopular){
     showPopularMovie(resPopularData.results);
 }
 title.addEventListener('click', function(){
-    window.open('http://localhost:5500', "_self");
+    window.history.back();
 })
 function showPopularMovie(data){
     popular.innerHTML = "";
-    var count = 0;
     data.forEach((movie)=>{
             const { poster_path, title, vote_average, overview } = movie;
 
